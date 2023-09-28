@@ -1,0 +1,312 @@
+/*reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*reset fin*/
+
+
+/*fontface*/
+@font-face {
+    font-family: 'icomoon';
+    src: url(fonts/icomoon/icomoon.ttf);
+}
+
+body {
+    font: 400 13px/2;
+    font-family: "Lato", sans-serif;
+}
+/**.gridlayout {
+    grid-template-columns: repeat(12, 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". h h h h h n n n n n ." /*header y navbar**/
+.navbar, #enlaces {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    text-align:center;
+    justify-content:space-around;
+
+}
+#enlaces {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+#enlaces li {
+    padding-right: 20px;
+}
+#logo a {
+    color: #fff;
+    font-size: 40px;
+}
+#logo em {
+    color: #0ADDBF;
+}
+.navbar {
+    padding: 2vh 12vw 12vw 2vh;
+}
+#section1 {
+    display:flex;
+    flex-direction: row;
+    padding: 15vh 12vw 12vw 15vh;
+    align-items: center;
+    justify-content: center;
+}
+#s1text {
+    margin-right: 10vw;
+}
+    #s1text h1 {
+        color: #fff;
+        font-size: 59px;
+    }
+.navbar, #section1 {
+    background-image: url("./images/img_bg_2.jpg");
+    background-position: top;
+    background-attachment:fixed;
+    background-size: cover;
+}
+#s1form {
+    background-color: #fff;
+    border-top: solid;
+    border-top-color: #0ADDBF;
+    border-top-width: 6px;
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+#s1form div {
+    margin: 10px 10px;
+}
+#s1form label {
+    color: #777;
+}
+#s1form input, #s1form select {
+    border-radius: 4px;
+    color: #777;
+    transition: 0.5s;
+}
+#s1form input:hover, #s1form select:hover {
+    color: #0ADDBF;
+}
+
+.boton {
+    background-color: #0ADDBF;
+    text-decoration-color: black;
+    width: 270px;
+    height:50px;
+    transition: 0.5s;
+}
+.boton:hover {
+    background-color: black;
+    text-decoration-color: white;
+}
+.boton2 {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 25px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+    .boton2:hover {
+        background-color: #0ADDBF;
+        text-decoration-color: white;
+    }
+#enlaces #enlaces:hover {
+    color: #0ADDBF;
+}
+/*seccion 2*/
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    padding: 15vh 12vw 12vw 15vh;
+    align-items: center;
+    justify-content: center;
+}
+.picrow1, .picrow2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen1 {
+    width: 10vw;
+    height: auto;
+    margin:25px 25px 0 25px;
+}
+.figtext {
+    width: 200px;
+    margin: 25px 25px 0 25px;
+    text-align: center;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.figtext h2 {
+    text-decoration: none;
+    color: #0ADDBF;
+    font-size: 16px;
+}
+#s2header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#s2header h2 {
+    font-size: 50px;
+    line-height: 2.5;
+}
+#s2header p {
+    font-size: 20px;
+}
+
+/*zona 3*/
+#section3 {
+    display: flex;
+    flex-direction: row;
+    padding: 5vh 12vw 12vw 5vh;
+    align-items: center;
+    justify-content: space-around;
+}
+#section3 > div {
+    width: 10vw;
+    height: auto;
+}
+#contacto, #acercade, #destinos, #hoteles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h3 {
+    font-size: 15px;
+    line-height: 2.5;
+}
+#section3 p {
+    color: gray;
+    line-height: 1.5;
+}
+.fenlace {
+    color: #0ADDBF;
+    text-decoration: none;
+    line-height: 1.5;
+    transition: 0.5s;
+}
+.fenlace:hover {
+    color: black;
+}
+
+/*zona 4*/
+#pie {
+    display: flex;
+    flex-direction: row;
+    padding: 15vh 12vw 12vw 2vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.ficonos {
+    color: #0ADDBF;
+    text-decoration: none;
+    line-height: 1.5;
+    transition: 0.5s;
+    font-family: icomoon;
+}
+
+    .ficonos:hover {
+        color: black;
+    }
+    .iconosrow { /*no doy hecho que se apliquen las fuentes de iconos, por falta de tiempo procederé a adaptarlo a mobil*/
+        display: flex;
+        flex-direction: row;
+        font:800 14/1.5 'icomoon';
+        padding-right: 15px;
+    }
+    @media only screen and (max-width: 715px) {
+        .navbar, #section1, #section2, #section3, #section4, .picrow1, .picrow2 {
+            flex-direction: column;
+        }
+        .navbar {
+            padding: 5px 0 0 5px;
+            text-align:center;
+        }
+        #section2, #section1, #section3, #section4 {
+            padding: 1%px;
+        }
+        #s1form {
+            width: auto;
+        }
+        .imagen1 {
+            max-width: 100%;
+            width: 100%;
+            height:100%;
+            padding:0;
+            margin:2%;
+        }
+        .boton {
+            width: auto;
+
+        }
+        #section3 > div {
+            width: auto;
+            height: auto;
+            text-align: left;
+        }
+    }

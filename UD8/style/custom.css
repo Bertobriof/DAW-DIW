@@ -1,0 +1,22 @@
+.custom-opacidad-8 {
+    opacity: 0.8;
+}
+.custom-opacidad-6 {
+    opacity: 0.6;
+}
+.custom-mr-2vw {
+    margin-right: 2vw;
+}
+
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("/webfonts/fa-brands-400.woff");
+    src: url("/webfonts/fa-brands-400.eot") format("embedded-opentype"), url("/webfonts/fa-brands-400.woff2") format("woff2"), url("/webfonts/fa-brands-400.woff") format("woff"), url("/webfonts/fa-brands-400.ttf") format("truetype"), url("/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  
+  .far, .fab {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400; }

@@ -1,0 +1,57 @@
+body {
+    background-color: #0094ff;
+}
+img {vertical-align: middle;}
+
+h1 {
+    color: #ffd800;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*contenedor del slider e imagenes*/
+.contenedor_slider{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+#img_slider {
+    width:100%;
+}
+.tarjeta {display: none;}
+/*estilos para los puntos del slider*/
+.puntos {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:white;
+  border: 1px solid #777;
+  border-radius: 7px;
+  display: inline-block;
+  transition: background-color 0.6s ease-in;
+}
+
+.contenedor_puntos {
+    text-align:center;
+}
+.activo {
+  background-color: yellow;
+}
+
+
+.desvanecer { /*basandome en el ejemplo de wc3school, he cambiado la animación por fade*/
+    animation-name: desvanecimiento;
+    animation-duration: 1.8s;
+    -webkit-animation-name: desvanecimiento;
+    -webkit-animation-duration: 1.8s;
+}
+
+@keyframes desvanecimiento {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@-webkit-keyframes desvanecimiento {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- metatags requeridos-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sube tus recetas</title>
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/fontawesome.css" type="text/css">
+        <link rel="stylesheet" href="style/custom.css" type="text/css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+            <div class="container">
+                <img src="/images/logo.svg" class="navbar-brand h-25" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Portada</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/recetas.html">Sube tus recetas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/recetasnuevas.html">Recetas nuevas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Preguntas frecuentes</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                      <li><a class="dropdown-item" href="#quienesomos">Quienes somos</a></li>
+                      <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form>
+                  <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+                </form>
+
+              </div>
+            </div>
+          </nav>
+          <!--contenido-->
+          <!--carrousel-->
+          <div class="row">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="/images/carrous1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white bg-dark custom-opacidad-6">
+                      <h5>Recetas de repostería</h5>
+                      <p>Aprende a hornear ricos postres de toda la vida</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="/images/carrous2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white bg-dark custom-opacidad-6">
+                      <h5>Comparte tus recetas</h5>
+                      <p>¡No tengas vergüenza! Comparte tu receta estrella con nosotros</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/carrous3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block c text-white bg-dark custom-opacidad-6">
+                      <h5>Sé creativo</h5>
+                      <p>Innova, prueba nuevas cosas</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+          <!--Tarjetas-->
+          
+          <div class="row pt-4 pb-4 bg-light">
+              <div class="d-flex flex-row justify-content-center">
+                <div class="d-flex flex-row justify-content-evenly w-75">
+                    <div class="card" style="width: 18rem;">
+                        <a href="/recetasnuevas.html#receta1"><img class="card-img-top img-fluid" src="/images/recetas/receta1.jpg" alt="Card image cap"></a>
+                        <div class="card-body">
+                          <a href="/recetasnuevas.html#receta1" class="text-decoration-none text-black-50 nav-link"><p class="card-text">Cómo hacer cupcakes fáciles (Masa de vainilla)</p></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <a href="/recetasnuevas.html#receta2"><img class="card-img-top img-fluid" src="/images/recetas/receta2.jpg" alt="Card image cap"></a>
+                        <div class="card-body">
+                          <a href="/recetasnuevas.html#receta2" class="text-decoration-none text-black-50 nav-link"><p class="card-text">Ricos smoothies con esta receta sana</p></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <a href="/recetasnuevas.html#receta3"><img class="card-img-top img-fluid" src="/images/recetas/receta3.jpg" alt="Card image cap"></a>
+                        <div class="card-body">
+                          <a href="/recetasnuevas.html#receta3" class="text-decoration-none text-black-50 nav-link"><p class="card-text">Receta de la mejor tarta de queso de la provincia</p></a> 
+                        </div>
+                    </div>
+                  </div>
+              </div>
+            
+          </div>
+          <!--Quienes somos-->
+          <div class="row pt-3 pb-4 bg-secondary">
+              <div class="d-flex flex-column text-white justify-content-center align-items-center">
+                  <article id="quienesomos" class="w-75">
+                      <h1>Quienes somos</h1>
+                      <p>Somos una web cuyo objetivo es el de recopilar recetas familiares de nuestros usuarios con el bojetivo de compartir el conocimiento y evitar que se pierda el conocimiento culinario transmitido oralmente.</p>
+                  </article>
+              </div>
+          </div>
+          <!--Footer-->
+          <footer id="contacto" class="footer mt-auto py-3 bg-dark text-white">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3">
+                        <h4>Correo electrónico</h4>
+                        <p>hola@lareceteria.com</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Empleo</h4>
+                        <p>empleo@lareceteria.com</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Redes sociales</h4>
+                        <div class="d-flex flex-row">
+                            <a href="#" class="nav-link"></li><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+
+                </div>
+          </footer>
+    </body>
+</html>

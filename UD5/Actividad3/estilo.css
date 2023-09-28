@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    background: #7DDE92;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor {
+    display: grid;
+    width: 90%;
+    height: auto;
+    max-width: 1000px;
+    margin: 20px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "navbar navbar navbar"
+    "conten conten conten"
+    "footer footer footer";
+}
+
+.contenedor >div, .contenedor .header, .contenedor .navbar, .contenedor .footer, .contenedor .contenido {
+    background: #F8FFE5;
+    padding: 20px;
+    border-radius: 4px;
+}
+.contenedor .header {
+    grid-area: header;
+    background: #4E4187;
+    color: #F8FFE5;
+    text-align: center;
+}
+.contenedor .navbar {
+    grid-area: navbar;
+    background: #3083dc;
+    color: #F8FFE5;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+.contenedor .contenido {
+    background: #F8FFE5;
+    grid-area: conten;
+}
+.contenedor .footer {
+    grid-area: footer;
+    background: #2EBFA5;
+    color: #F8FFE5;
+}
+#ejercicio1, #articulo3, .picrow1, .picrow2, .picrow3, .picrow4, .picrow5 {
+    display: flex;
+    flex-direction: row;
+}
+#articulo1 {
+    margin: 2vw 5vw;
+}
+#ejercicio2, #ejercicio3, #ejercicio4 , #ejercicio5, #ejercicio6, #ejercicio7, #ejercicio8{
+    margin: 2vw 0;
+}
+.picrow1 picture, .picrow2 picture, .picrow3 picture, .picrow4 picture, .picrow5 picture {
+    margin: 1vw;
+}
+#ejercicio5 > div, .picrow3, .picrow4, .picrow5 {
+    justify-content: center;
+    margin: 2vw 0 0 0;
+}
+/*texto*/
+.nenl a {
+    text-decoration: none;
+    color: #F8FFE5;
+    list-style: none;
+    padding: 1vw;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+.nenl a:hover {
+    color: orangered;
+}
+li {
+    margin-left: 2.5vw;
+}
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #4E4187;
+    transition: 0.5s;
+}
+a:hover {
+    color: #3083dc;
+}
+.picrow1 > div, .picrow2 > div, .picrow3 > div, .picrow4 > div, .picrow5 > div {
+    text-align: center;
+}

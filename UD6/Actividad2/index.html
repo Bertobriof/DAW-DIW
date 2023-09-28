@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Actividad 3. Diseño de Interfaces Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+
+        function restart() {
+            var video = document.getElementById("Video1");
+            video.currentTime = 0;
+        }
+        function vidplay() {
+            var video = document.getElementById("Video1");
+            var button = document.getElementById("play");
+            if (video.paused) {
+                video.play();
+                button.textContent = "Pausar";
+            } else {
+                video.pause();
+                button.textContent = "Iniciar";
+            }
+        }
+        function skip(value) {
+            var video = document.getElementById("Video1");
+            video.currentTime += value;
+        }
+    
+        function skip(value) {
+            var video = document.getElementById("Video1");
+            video.currentTime += value;
+        }
+        function goFullscreen(id) {
+            var element = document.getElementById("Video1");       
+            if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullScreen) {
+                element.webkitRequestFullScreen();
+            }  
+        }
+        function SetVolume(val) {
+            var player = document.getElementById('Video1');
+            console.log('Before: ' + player.volume);
+            player.volume = val / 100;
+            console.log('After: ' + player.volume);
+        }
+    </script> 
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1>Desarrollo de interfaces web</h1>
+            <h2>UD06</h2>
+        </header>
+        <nav class="navbar">
+            <div class="nsec">
+                <h3>Ejercicios:</h3>
+            </div>
+            <div class="nenl">
+                <a href="#ejercicio1">1</a>
+            </div>
+        </nav>
+        <main class="contenido">
+            <div id="ejercicio1">
+                <div class="audio">
+                    <div class="audio">
+                        <h3>Vídeo mar</h3>
+                        <video id="Video1" width="620" height="440">
+                            <source src="video/oceano.mp4" type="video/mp4">
+                            <source src="video/oceano.flv" type="video/flv">
+                            <source src="video/oceano.webm" type="video/webm">
+                            No compatible
+                        </video>
+                        <div id="buttonbar">
+                            <button id="play" onclick="vidplay()">Iniciar</button>
+                            <button id="restart" onclick="restart();">Inicio</button>
+                            <button id="end" onclick="skip(1000000000000000000);">Fin</button> 
+                            <button id="rew" onclick="skip(-10)">Retroceder</button>
+                            <button id="fastFwd" onclick="skip(10)">Avanzar</button>
+                            <button id="fullscreen" onclick="goFullscreen(Video1)">Pantalla completa</button>
+                            <input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
+                        </div>  
+                </div>
+            </div>
+        </main>
+    </div>
+</body>

@@ -1,0 +1,57 @@
+/*********
+*0. RESET*
+**********/
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+        /* reset para navegadores antiguos */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section { display: block; }
+        body { line-height: 1; }
+        ol, ul { list-style: none; }
+        blockquote, q { quotes: none; }
+        blockquote:before, blockquote:after,
+        q:before, q:after { content: ''; content: none; }
+        table { border-collapse: collapse; border-spacing: 0; }
+
+    /*Estilos de la tarea*/
+    .grid_layout {
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        grid-template-rows: (3, 1fr);
+        align-items: center;
+        margin-left: 4%;
+    }
+    .titulo {
+        grid-column-start: span 3;
+        text-align: center;
+        font: 500 24px/2 "UnifrakturCook"
+    }
+    h1 {
+        font-size: 44px;
+    }
+
+
+@media only screen and (max-width: 420px) {
+    .grid_layout, .imagen {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+    .titulo {
+        text-align: center;
+        font: 500 24px/2 "UnifrakturCook"
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Slider automático</title>
+        <link rel="stylesheet" href="estilo4.css" type="text/css"/>
+    </head>
+    <body>
+
+      <h1>Slider automático con javascript</h1>
+      
+      <div class="contenedor_slider"> <!--Imagenes/tarjetas del slider-->
+        <div class="tarjeta desvanecer">
+          <img src="img/img001.jpg" id="img_slider">
+        </div>
+        <div class="tarjeta desvanecer">
+          <img src="img/img002.jpg" id="img_slider">
+        </div>
+        <div class="tarjeta desvanecer">
+          <img src="img/img003.jpg" id="img_slider">
+        </div>
+          <div class="tarjeta desvanecer">
+        <img src="img/img004.jpg" id="img_slider">
+        </div>
+      </div>
+      <br>
+      <div class="contenedor_puntos"> <!--Puntos de progreso-->
+        <span class="puntos"></span> 
+        <span class="puntos"></span> 
+        <span class="puntos"></span> 
+        <span class="puntos"></span>
+      </div>
+      
+      <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var tarjetas = document.getElementsByClassName("tarjeta");
+        var puntos = document.getElementsByClassName("puntos");
+        for (i = 0; i < tarjetas.length; i++){
+          tarjetas[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > tarjetas.length) {slideIndex = 1}    
+        for (i = 0; i < puntos.length; i++) {
+          puntos[i].className = puntos[i].className.replace(" activo", "");
+        }
+        tarjetas[slideIndex-1].style.display = "block";  
+        puntos[slideIndex-1].className += " activo";
+        setTimeout(showSlides, 2000);
+      }
+      </script>
+      </body>
+      </html> 
+</html>

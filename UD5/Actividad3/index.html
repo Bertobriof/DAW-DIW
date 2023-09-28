@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Actividad 3. Diseño de Interfaces Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1>Desarrollo de interfaces web</h1>
+            <h2>Actividad 3</h2>
+        </header>
+        <nav class="navbar">
+            <div class="nsec">
+                <h3>Ejercicios:</h3>
+            </div>
+            <div class="nenl">
+                <a href="#ejercicio1">1</a>
+                <a href="#ejercicio2">2</a>
+                <a href="#ejercicio3">3</a>
+                <a href="#ejercicio4">4</a>
+                <a href="#ejercicio5">5</a>
+                <a href="#ejercicio6">6</a>
+                <a href="#ejercicio7">7</a>
+                <a href="#ejercicio8">8</a>
+            </div>
+        </nav>
+        <main class="contenido">
+            <div id="ejercicio1">
+                <div>                    
+                    <a href="https://commons.wikimedia.org/wiki/File:Deloitte_Building,_Christchurch,_New_Zealand.jpg">
+                        <picture class="imagenes">
+                            <source srcset="images/potd_500.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500.jpg" alt="edificio con luz azul">
+                        </picture>
+                    </a>
+                </div>
+                <article id="articulo1">
+                    <div class="enunciado"><h2>1. Acceder a <a href="http://commons.wikimedia.org/wiki/Commons:Picture_of_the_day">Wikipedia/Picture of the Day</a>  y descargar una imagen a resolución completa.</h2></div>
+                    <p>
+                        <ul>
+                            <li><strong>Nombre de fichero:</strong> <p>Deloitte Building, Christchurch, New Zealand</p></li>
+                            <li><strong>Formato de imagen:</strong> <p>JPG</p></li>
+                            <li><strong>Tamaño:</strong> <a>4502x5391 px</a></li>
+                            <li><strong>Autor:</strong> <a href="https://commons.wikimedia.org/wiki/File:Deloitte_Building,_Christchurch,_New_Zealand.jpg">Michal Klajban</a></li>
+                            <li><strong>Licencia y fuente:</strong> <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</li>
+                        </ul>
+                    </p>
+                </article>
+            </div>
+            <section id="ejercicio2">
+                <div class="enunciado">
+                    <h2>Abre la imagen con un editor. ¿Cuanta memoria consume la imagen una vez cargada?</h2>
+                </div>
+                <article>
+                    <p>Consume unos <strong>226,2 MB</strong>.</p>
+                </article>
+            </section>
+            <section class="seccion" id="ejercicio3">
+                <div class="enunciado"><h2>Utiliza Gimp para guardar la imagen en formato <strong>PNG</strong> y en formato <strong>TIFF</strong> (Utiliza la compresión LZW).</h2></div>
+                <article id="articulo3">
+                    <div>
+                        <h3>¿Qué tipo de compresión y transparencia soporta cada uno de los formatos?</h3>
+                        <p>El formato <strong>TIFF</strong> soporta los siguienbtes tipos de compresión:</p>
+                        <ul id="tiff">
+                            <li>Ninguno</li>
+                            <li>LZW</li>
+                            <li>Paquete de bits</li>
+                            <li>Desinflar</li>
+                            <li>JPEG</li>
+                            <li>Fax CCITT grupo 3</li>
+                            <li>Fax CCITT grupo 4</li>
+                        </ul>
+                        <p>También permite guardar los vlaores de los colores de los píxeles transparentes.</p>
+                    </div>
+                    <div>
+                        <p>El formato <strong>PNG</strong> permite los siguientes tipos de compresión:</p>
+                        <ul class="png">
+                            <li>Entrelazado Adam7</li>
+                            <li>Permite seleccionar los niveles de compresión. Por defecto: 9</li>
+                        </ul>
+                        <h3>¿Cuánto acaba ocupando el fichero .png y .tiff?</h3>
+                        <p>El .png ocupa 31,4 MB mientras que el TIFF 35,3 MB</p>
+                        <h3>¿Cuáles son los formatos de proyecto nativos de GIMP?</h3>
+                        <p>Es el formato XFC (<i>Xperimental Computing Facility</i>)</p>
+                    </div>
+                </article>
+            </section>
+            <section id="ejercicio4">
+                <div id="enunciado">
+                    <h2>Ejercicio 4</h2>
+                </div>
+                <article>
+                    <h3>¿Cuánto ocupa el fichero de imagen reescalado?</h3>
+                    <p>Pesa unos <strong>311 KB</strong></p>
+                </article>
+            </section>
+            <section id="ejercicio5">
+                <div class="enunciado">
+                    <h2>Ejercicio 5. Imagen con diferentes calidades.</h2>
+                </div>
+                <div class="picrow1">
+                    <div>
+                        <h3>Calidad 0%</h3>
+                        <picture>
+                            <source srcset="images/potd_500_0.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500_0.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Calidad 25%</h3>
+                        <picture>
+                            <source srcset="images/potd_500_25.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500_25.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Calidad 50%</h3>
+                        <picture>
+                            <source srcset="images/potd_500_50.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500_50.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="picrow2">
+                    <div>
+                        <h3>Calidad 75%</h3>
+                        <picture>
+                            <source srcset="images/potd_500_75.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500_75.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Calidad 90%</h3>
+                        <picture>
+                            <source srcset="images/potd_500_90.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500_90.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Calidad máxima</h3>
+                        <picture>
+                            <source srcset="images/potd_500_max.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500_max.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <section id="ejercicio6">
+                <div class="enunciado">
+                    <h2>Ejercicio 6</h2>
+                </div>
+                <article id="article6">
+                    <div>
+                        <h3>Guarda una fotografía en GIF y PNG. ¿Qué diferencias aprecias?</h3>
+                        <p>A nivel visual, se observa una mayor pérdida de calidad en el GIF que en el PNG.
+                            En cuanto al peso de los archivos, el .png posee mayor tamaño que el .gif. Esto es de esperar por la pérdida de calidad en el gif.</p>    
+                    </div>
+                    <div class="picrow3">
+                        <div>
+                            <h4>PNG</h4>
+                            <picture>
+                                <source srcset="images/potd_500_png.png 500w" sizes="15vw">
+                                <img src="images/potd_500_png.png" alt="png">
+                            </picture>
+                        </div>
+                        <div>
+                            <h4>GIF</h4>
+                            <picture>
+                                <source srcset="images/potd_500_gif.gif 500w" sizes="15vw">
+                                <img src="images/potd_500_gif.gif" alt="png">
+                            </picture>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="ejercicio7">
+                <div>
+                    <h2>Ejercicio 7</h2>
+                </div>
+                <h3>¿Gimp permite por defecto trabajar con los formatos WebP, JPEG 2000, DICOM? ¿Existen complementos para soportar dichos formatos?</h3>
+                <p>Sí, permite exportar en formato WebP y DICOM sin instalar complementos o plugins. Para JPEG2000 es necesario instalar un complemento.</p>
+            </section>
+        </main>
+        <footer class="footer">
+            <section id="ejercicio8">
+                <div class="enunciado">
+                    <h2>Ejercicio 8. Utiliza Gimp para demostrar, mostrando el resultado, las siguientes operaciones gráficas:</h2>
+                </div>
+                <div class="picrow4">
+                    <div>
+                        <h4>Corte de un bloque de imagen</h4>
+                        <picture>
+                            <source srcset="images/potd_500_cortebloque.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500_cortebloque.jpg" alt="png">
+                        </picture>
+                    </div>
+                    <div>
+                        <h4>Rotación a un ángulo particular</h4>
+                        <picture>
+                            <source srcset="images/potd_500_180gr.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500_180gr.jpg" alt="png">
+                        </picture>
+                    </div>
+                </div>
+                <div class="picrow5">
+                    <div>
+                        <h4>Transparencia</h4>
+                        <picture>
+                            <source srcset="images/potd_500_transparente.png 500w" sizes="15vw">
+                            <img src="images/potd_500_transparente.png" alt="png">
+                        </picture>
+                    </div>
+                    <div>
+                        <h4>Superposición:</h4>
+                        <picture>
+                            <source srcset="images/potd_500_rectangulo.jpg 500w" sizes="15vw">
+                            <img src="images/potd_500_rectangulo.jpg" alt="png">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
